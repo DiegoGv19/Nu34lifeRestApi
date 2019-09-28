@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de ingredientes</title>
+</head>
+<body>
+    <h1>Lista de ingredientes</h1>
+    <ul>
+        <li th:each="ingrediente: ${listaIngredientes}" th:text="${ingrediente}"></li>
+    </ul>
+</body>
+</html>
